@@ -69,7 +69,7 @@ public class Login {
 		lblHhrrManagementV.setBounds(103, 19, 252, 26);
 		frame.getContentPane().add(lblHhrrManagementV);
 		
-		JButton btnIniciarSesin = new JButton("Iniciar sesiÃ³n");
+		JButton btnIniciarSesin = new JButton("Iniciar sesión");
 		btnIniciarSesin.setBounds(165, 187, 117, 29);
 		frame.getContentPane().add(btnIniciarSesin);
 		
@@ -84,7 +84,7 @@ public class Login {
 			@Override
 			public void mouseClicked(MouseEvent e) {
 				if(usuarioTxt.getText().isEmpty() || new String(passTxt.getPassword()).isEmpty()){
-					JOptionPane.showMessageDialog(frame, "Debes introducir un usuario y contraseÃ±a!","AutenticaciÃ³n",JOptionPane.ERROR_MESSAGE );
+					JOptionPane.showMessageDialog(frame, "Debes introducir un usuario y contraseña!","Autenticación",JOptionPane.ERROR_MESSAGE );
 				} else{
 					PersonalFrame pFrame = new PersonalFrame();
 					pFrame.setVisible(true);
